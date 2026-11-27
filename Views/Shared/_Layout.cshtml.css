@@ -1,0 +1,71 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+
+
+/* Estrutura geral */
+
+
+/* Cabeçalho */
+header {
+    background-color: #8bf4e2;
+    color: #06463b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+header .flex-row{
+    gap : 10px;
+    padding : 10px;
+    display :flex;
+    align-items : center;
+    justify-content : center;
+}
+
+/* Menu + conteúdo */
+.layout-container {
+    display: grid;
+    grid-template-columns: 240px minmax(0, 1fr);
+    min-height: 0;
+    min-width: 0;
+    overflow: hidden;
+}
+
+/* Menu */
+aside {
+    margin: 0px;
+    padding: 20px;
+    background-color: #8bf4e2;
+    overflow-y: auto;
+    min-height: 0;
+    
+}
+
+    /* Links */
+    aside nav {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+           
+
+/* Conteúdo */
+main {
+    padding: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-height: 0;
+    min-width: 0;
+}
+
+/* Rodapé */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top : 1px solid gray;
+    background-color: transparent;
+}

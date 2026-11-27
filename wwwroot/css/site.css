@@ -1,0 +1,113 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: grid !important;
+    grid-template-rows: 70px minmax(0, 1fr);
+    overflow: hidden !important;
+    outline: 3px solid red;
+}
+
+footer{
+    margin : 90px 0px ;
+   
+}
+.imageminicial{
+    display: flex;
+    align-content : center;
+    justify-content : center
+
+}
+.opcao {
+    font-size: 20px;
+    height: 60px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #12d3b3;
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+.opcao:hover {
+    background-color: #0ea48b;
+}
+
+div .texto-longo{
+    display : flex;
+    max-width : 600px;
+}
+
+/* Page Horarios */
+#tabela-horarios {
+    text-align: center;
+    width: 80%;
+    max-width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #12d3b3;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden; /* Corta os cantos do thead e das células internas */
+}
+    #tabela-horarios thead {
+        background-color: #12d3b3;
+        border-radius: 15px;
+        
+    }
+    #tabela-horarios tbody td {
+       
+        border-bottom: 1px solid #12d3b3;
+    }
+    #tabela-horarios tbody tr:hover{
+        background-color : dimgray;
+    }
+
+    /* Page Contato */
+.formulario-enviar {
+    display: flex;
+    align-items : center;
+    flex-direction: column;
+    gap: 12px;
+    width: 450px;
+    padding: 15px;
+    margin: 30px 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+    .formulario-enviar h5{
+        text-align : center;
+        margin-bottom : 15px;
+    }
+    .formulario-enviar div{
+        display : flex;
+        padding : 5px;
+        border : 1px solid #ccc;
+        width : 100%;
+        height : auto;
+        border-radius : 10px;
+    }
+    .formulario-enviar label{
+        width : auto;
+    }
+
+    .formulario-enviar input{
+        padding : 2px;
+        width : 70%;
+        border : none;
+        height : auto;
+        outline : none;
+    }
+        
+    .formulario-enviar textarea {
+        padding: 2px;
+        width : 70%;
+        border: none;
+        height: 90px;
+    }

@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SistemaDeClinica</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/SistemaDeClinica.styles.css" asp-append-version="true" />
+</head>
+
+<body>
+    <header>
+        <div class="flex-row">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlTUDmqa-puBrTfvSkNYLUtE7ZCbu6IZMwqKQdLa_Gbw&s=10" width="60" />
+            <h2>Clinica Magnifica </h2>
+        </div>
+        <nav>
+            <button class="btn btn-info">Notificações</button>
+            <button class="btn btn-info">Perfil</button>
+        </nav>
+    </header>
+
+    <div class="layout-container">
+
+        <aside>
+            <nav>
+                <a class="opcao" asp-action="Index" asp-controller="Home">Pagina Inicial</a>
+                <a class="opcao" asp-action="SobreAClinica" asp-controller="Home">Sobre a Clinica</a>
+                <a class="opcao" asp-action="Horarios" asp-controller="Home">Horário de Atendimento</a>
+                <a class="opcao" asp-action="Contato" asp-controller="Home">Contato</a>
+            </nav>
+        </aside>
+
+        <main>
+            @RenderBody()
+            <footer>
+                <p> <img src="https://cdn-icons-png.flaticon.com/128/3735/3735257.png" width="20" /> Entre em contato com a gente (99) 9 9999 9999 </p>
+            </footer>
+        </main>
+
+    </div>
+
+    
+    
+
+   
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
